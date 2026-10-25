@@ -1,0 +1,52 @@
+{
+  "$schema": "https://schema.tauri.app/config/2",
+  "productName": "Lumi",
+  "version": "0.2.0",
+  "identifier": "app.lumi.desktop",
+  "build": {
+    "beforeDevCommand": "npm run dev",
+    "devUrl": "http://127.0.0.1:3000",
+    "beforeBuildCommand": "npm run build",
+    "frontendDist": "../out"
+  },
+  "app": {
+    "windows": [
+      {
+        "label": "main",
+        "title": "Lumi",
+        "width": 1440,
+        "height": 960,
+        "minWidth": 960,
+        "minHeight": 640,
+        "decorations": false,
+        "backgroundColor": "#09090b"
+      }
+    ],
+    "security": {
+      "csp": "default-src 'self'; script-src 'self' 'unsafe-inline'; style-src 'self' 'unsafe-inline'; img-src 'self' data: blob:; font-src 'self' data:; connect-src 'self' ipc: http://ipc.localhost http://127.0.0.1:*; frame-src blob:; object-src 'none'; base-uri 'self'; form-action 'self'"
+    }
+  },
+  "bundle": {
+    "active": true,
+    "targets": [
+      "nsis"
+    ],
+    "shortDescription": "Votre second cerveau personnel",
+    "category": "Productivity",
+    "icon": [
+      "icons/32x32.png",
+      "icons/128x128.png",
+      "icons/128x128@2x.png",
+      "icons/icon.ico"
+    ],
+    "windows": {
+      "nsis": {
+        "displayLanguageSelector": false,
+        "languages": [
+          "French"
+        ],
+        "installMode": "currentUser"
+      }
+    }
+  }
+}

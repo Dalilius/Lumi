@@ -1,0 +1,25 @@
+LUMI DESKTOP 0.2.0 — SANS SUPABASE
+
+1. Décompressez entièrement cette archive.
+2. Fermez votre ancienne version de Lumi, puis lancez Lumi_0.2.0_x64-setup.exe.
+   Windows 10/11 x64 ; WebView2 sera installé si nécessaire.
+   L’application est une version de développement non signée.
+3. Ouvrez Lumi → Utiliser mon espace → Réglages.
+4. Collez votre clé API Gemini → Enregistrer Gemini → Tester la connexion.
+   Créer une clé : https://aistudio.google.com/api-keys
+
+Aucun compte Lumi, aucune base Supabase et aucun email de confirmation requis.
+Vos anciennes données LOCALES sont reprises automatiquement dans la même installation.
+Les données restées uniquement sur Supabase ne sont pas importées par cette version.
+
+Gmail et Outlook : la configuration OAuth de bureau est expliquée dans GUIDE.md
+et dans les panneaux Réglages. Vous pouvez utiliser Gemini sans connecter vos mails.
+EDHEC peut exiger un accord administrateur pour Outlook.
+
+Sauvegardez vos données et fichiers : Réglages → Sauvegarder mon espace.
+La sauvegarde n’inclut pas les clés et autorisations, conservées dans le coffre Windows.
+Lumi.exe permet aussi de lancer l’application sans installation si WebView2 est présent.
+
+GUIDE.md : configuration et limites.
+VALIDATION.md : tests effectués et essais restant à réaliser avec vos comptes sur Windows.
+source/ : code complet, tests et notices des dépendances.

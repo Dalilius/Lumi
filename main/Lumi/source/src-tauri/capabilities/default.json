@@ -1,0 +1,4 @@
+{
+ "$schema":"../gen/schemas/desktop-schema.json", "identifier":"desktop", "description":"Fenêtres locales Lumi uniquement", "windows":["main","lumi-*"],
+ "permissions":["core:default","core:window:allow-minimize","core:window:allow-toggle-maximize","core:window:allow-close","core:window:allow-start-dragging","core:window:allow-set-always-on-top","dialog:allow-save","fs:allow-write-file",{"identifier":"opener:allow-open-url","allow":[{"url":"https://**"},{"url":"http://localhost/**"},{"url":"http://127.0.0.1/**"}]}]
+}
